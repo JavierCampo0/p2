@@ -8,13 +8,81 @@
             Crimen organizao
         </title>
         <body>
+            <style>
+                h1 { color: rgb(32, 32, 147); }
+            </style>
             <h1>Hola</h1>
             <h2>Hola</h2>
             <h3>Hola</h3>
+            <body><h1 style="color: rgb(255, 0, 174);">Elemento estilizado *</h1></body>
             <h4>Hola</h4>
             <h5>Hola</h5>
             <h6>Hola</h6>
-            Hola
+            
+            
+
+            <table>
+                <caption id="titulo">Cars (las maquinas que estan por la calle no la peli)</caption>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Configuración</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="separador">
+                    <th rowspan="4">Básicos</th>
+                    <td>Id</td>
+                    <td><code>#id1 { color: gray; }</code></td>
+                    <td><code>&lt;p id="id1">Párrafo&lt;/p></code></td>
+                  </tr>
+                  <tr>
+                    <td>Atributo</td>
+                    <td><code>p[title] { color: gray; }</code></td>
+                    <td><code>&lt;p title="Título">Párrafo&lt;/p></code></td>
+                  </tr>
+                  <tr>
+                    <td>Clase</td>
+                    <td><code>.clase1 { color: gray; }</code></td>
+                    <td><code>&lt;p class="clase1">Párrafo&lt;/p></code></td>
+                  </tr>
+                  <tr>
+                    <td>Nombre</td>
+                    <td><code>p { color: gray; }</code></td>
+                    <td><code>&lt;p>Párrafo&lt;/p></code></td>
+                  </tr>
+                  <tr class="separador">
+                    <th rowspan="2">Pseudo</th>
+                    <td>Clase</td>
+                    <td><code>a:hover { color: blue; }</code></td>
+                    <td><code>&lt;a href="">Enlace&lt;/a></code></td>
+                  </tr>
+                  <tr>
+                    <td>Elemento</td>
+                    <td><code>a::before { content: '🔗 '; }</code></td>
+                    <td><code>&lt;a href="">Enlace&lt;/a></code></td>
+                  </tr>
+                  <tr class="separador">
+                    <th rowspan="3">Otros</th>
+                    <td>Universal</td>
+                    <td><code>* { color: blue; }</code></td>
+                    <td>Aplica a todos los elementos del HTML</td>
+                  </tr>
+                  <tr>
+                    <td>Grupos</td>
+                    <td><code>#id1, #id2 { color: gray; }</code></td>
+                    <td><code>&lt;p id="id1">Párrafo 1&lt;/p>&lt;p id="id2">Párrafo 2&lt;/p></code></td>
+                  </tr>
+                  <tr>
+                    <td>Combinados</td>
+                    <td><code>p > span { color: red; }</code></td>
+                    <td><code>&lt;p>Párrafo &lt;span>importante&lt;span>&lt;/p></code></td>
+                  </tr>
+                </tbody>
+              </table>
+
         </body>
     </head>
 </html>

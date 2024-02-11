@@ -1,0 +1,36 @@
+/* Estilo de tabla hortera de principios de los 2000 */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background-color: pink;
+  }
+  
+  table th, table td {
+    border: 1px solid black;
+    padding: 8px;
+  }
+  
+  table th {
+    background-color: lime;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: yellow;
+  }
+  
+  table tr:nth-child(odd) {
+    background-color: cyan;
+  }
+  
+  table tr:hover {
+    background-color: magenta;
+  }
+  
+  table caption {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    margin-bottom: 10px;
+  }
+  

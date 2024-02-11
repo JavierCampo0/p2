@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Formulario de Creación de Usuario</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+<h1 style="color: rgb(0, 255, 153);">Formulario de Creación de Usuario</h1>
+
+<form>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="contrasena">Contraseña:</label>
+    <input type="password" id="contrasena" name="contrasena" required><br><br>
+
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" name="edad" required><br><br>
+
+    <label for="genero">Género:</label>
+    <select id="genero" name="genero">
+        <option value="masculino">Hombre</option>
+        <option value="femenino">Mujer</option>
+    </select><br><br>
+
+    <label for="intereses">Intereses:</label><br>
+    <input type="checkbox" id="mecanica" name="intereses[]" value="mecanica">
+    <label for="mecanica">Mecánica</label><br>
+    <input type="checkbox" id="tecnologia" name="intereses[]" value="tecnologia">
+    <label for="tecnologia">Tecnología</label><br>
+    <input type="checkbox" id="carreras" name="intereses[]" value="carreras">
+    <label for="carreras">Carreras</label><br><br>
+
+    <label for="comentarios">Comentarios:</label><br>
+    <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+
+    <input type="button" value="Crear usuario" onclick="mostrarDatos()">
+</form>
+
+<a href="paginaPrincipal.html">Página Principal</a>
+<br>
+<br>
+<a href="multimedia.html">El ingenio de Jeremías Clárckez</a>
+<br>
+<br>
+<a href="tabla.html">Tabla</a>
+
+</body>
+</html>

@@ -34,34 +34,33 @@ table {
     margin-bottom: 10px;
   }
 
-  /* Estilo para la página */
+
 body {
   font-family: "Comic Sans MS", cursive, sans-serif;
-  color: #333; /* Color del texto principal */
-  background-color: #f0f0f0; /* Color de fondo de la página */
-  background-image: url('miata.jpg'); /* Ruta de la imagen de fondo */
-  background-size: cover; /* Ajustar la imagen para cubrir todo el fondo */
-  background-position: center; /* Centrar la imagen de fondo */
+  color: #222; /* texto principal */
+  background-color: #f0f0f0; /* fondo de la página */
+  background-image: url('miata.jpg'); /* imagen de fondo */
+  background-position: center; 
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-/* Estilo para los párrafos de texto */
+
 p, h1, h2, a{
-  margin-bottom: 20px; /* Espacio inferior entre párrafos */
+  margin-bottom: 20px;
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-/* Estilo para los formularios */
+
 form {
-  background-color: #fff; /* Color de fondo del formulario */
   padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 20px; /* Espacio inferior entre formularios */
+  border-radius: 10px; /*bordes circulares*/
+  margin-bottom: 20px;
   background-color: rgba(255, 255, 255, 0.8);
 }
 
 label {
-  font-weight: bold; /* Texto de etiqueta en negrita */
+  font-weight: bold;
+  border-radius: 0px; 
   background-color: rgba(255, 255, 255, 0.8);
 }
 
@@ -70,30 +69,33 @@ input[type="email"],
 input[type="password"],
 textarea,
 select {
-  width: 100%; /* Ancho completo para campos de entrada */
+  width: 100%; 
   padding: 8px;
-  margin-bottom: 10px; /* Espacio inferior entre campos de entrada */
-  border: 1px solid #ccc; /* Borde de los campos de entrada */
+  margin-bottom: 10px;
+  border: 0px #ccc; 
   border-radius: 5px;
 }
 
 input[type="checkbox"] {
-  margin-right: 5px; /* Espacio a la derecha de las casillas de verificación */
+  margin-right: 5px; 
 }
 
 input[type="button"],
 input[type="submit"] {
-  background-color: #007bff; /* Color de fondo del botón */
-  color: #fff; /* Color del texto del botón */
+  background-color: #ff00c3; 
+  color: #fff; /* texto del botón */
+  font-weight: bold;
   border: none;
   padding: 10px 20px;
-  cursor: pointer;
+  cursor: pointer; /*se ve puntero cuando hoverea*/
   border-radius: 5px;
 }
 
 input[type="button"]:hover,
 input[type="submit"]:hover {
-  background-color: #0056b3; /* Color de fondo del botón al pasar el ratón */
+  background-color: #00d92b; /* fondo del botón al hoverear */
+  color: #000; /*texto del boton al hoverear*/
+
 }
 
   

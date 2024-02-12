@@ -80,7 +80,8 @@ input[type="checkbox"] {
 }
 
 input[type="button"],
-input[type="submit"] {
+input[type="submit"],
+button {
   background-color: #ff00c3; 
   color: #fff; /* texto del botón */
   font-weight: bold;
@@ -91,7 +92,8 @@ input[type="submit"] {
 }
 
 input[type="button"]:hover,
-input[type="submit"]:hover {
+input[type="submit"]:hover,
+button:hover {
   background-color: #00ff33; /* fondo del botón al hoverear */
   color: #000; /*texto del boton al hoverear*/
 

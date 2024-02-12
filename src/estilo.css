@@ -3,17 +3,11 @@ table {
     width: 100%;
     font-family: "Comic Sans MS", cursive, sans-serif;
     background-color: pink;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
   }
   
   table th, table td {
     border: 1px solid black;
     padding: 8px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
   }
   
   table th {
@@ -47,18 +41,12 @@ body {
   background-image: url('miata.jpg'); /* imagen de fondo */
   background-position: center; 
   background-color: rgba(255, 255, 255, 0.8);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
 }
 
 
 p, h1, h2, a{
   margin-bottom: 20px;
   background-color: rgba(255, 255, 255, 0.8);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
 }
 
 

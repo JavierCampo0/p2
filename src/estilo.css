@@ -93,9 +93,7 @@ input[type="submit"] {
 
 input[type="button"]:hover,
 input[type="submit"]:hover {
-  background-color: #00d92b; /* fondo del botón al hoverear */
+  background-color: #00ff33; /* fondo del botón al hoverear */
   color: #000; /*texto del boton al hoverear*/
 
 }
-
-  

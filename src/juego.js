@@ -1,9 +1,11 @@
-let preguntas = []; // Almacenará las preguntas cargadas desde la API
-let indiceActual = 0; // Índice de la pregunta actual
-let aciertos = 0; // Contador de respuestas correctas
+let preguntas = []; 
+let indiceActual = 0; 
+let aciertos = 0; 
 
-const contenido = document.getElementById('contenido');
+const contenido = document.getElementById('contenido'); //para la animación del color del texto
 let hue = 0;
+
+
 let docTitle = document.title;
 window.addEventListener("blur", () =>{
     document.title = "Vuelve porfa 😟";
@@ -13,7 +15,8 @@ window.addEventListener("focus", () =>{
 })
 
 
-// Función para cargar una pregunta de trivia desde la API
+
+// para cargar las preguntas de trivia 
 const cargarPreguntasDesdeAPI = function() {
     fetch('https://opentdb.com/api.php?amount=5&category=18&difficulty=easy&type=multiple', {
         method: 'GET',
@@ -29,12 +32,12 @@ const cargarPreguntasDesdeAPI = function() {
 const mostrarPregunta = function(pregunta) {
     const preguntaDiv = document.getElementById('pregunta');
     const respuestasDiv = document.getElementById('respuestas');
-    respuestasDiv.innerHTML = '';
+    respuestasDiv.innerHTML = '';   //borro lo que haya
 
     preguntaDiv.innerHTML = `<h2>${pregunta.question}</h2>`;
 
     const todasLasRespuestas = [pregunta.correct_answer, ...pregunta.incorrect_answers];
-    todasLasRespuestas.sort(() => Math.random() - 0.5);
+    todasLasRespuestas.sort(() => Math.random() - 0.5);     //randomizo el orden de las respuestas posibles ya que vienen ordenadas con a correcta la primera
 
     todasLasRespuestas.forEach(respuesta => {
         const botonRespuesta = document.createElement('button');
@@ -44,7 +47,6 @@ const mostrarPregunta = function(pregunta) {
     });
 };
 
-// Función para manejar la selección de respuesta
 const seleccionarRespuesta = (respuesta, correcta) => {
     if (respuesta === correcta) {
         alert('¡Respuesta correcta!');
@@ -61,7 +63,7 @@ const seleccionarRespuesta = (respuesta, correcta) => {
     }
 };
 
-// Función para mostrar el resultado final
+
 const mostrarResultadoFinal = () => {
     const contenido = document.getElementById('contenido');
     if (aciertos == 5) {
@@ -83,7 +85,7 @@ function cambiarColor() {
     if (hue >= 360) hue = 0; // Reinicia el hue después de un ciclo completo
 }
 
-setInterval(cambiarColor, 6); // Cambia el color cada 100 milisegundos
+setInterval(cambiarColor, 5); // Cambia el color cada 5 milisegundos
 
-// Inicializar la carga de preguntas cuando la página esté lista
+// carga rpeguntas cuando la página esté lista
 window.onload = cargarPreguntasDesdeAPI;

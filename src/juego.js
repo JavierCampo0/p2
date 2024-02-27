@@ -62,7 +62,6 @@ const seleccionarRespuesta = (respuesta, correcta) => {
         mostrarResultadoFinal();
     }
 };
-/////////////
 
 const mostrarResultadoFinal = () => {
     const contenido = document.getElementById('contenido');
